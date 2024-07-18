@@ -1,0 +1,83 @@
+---
+export const prerender = true;
+
+import Product from "../components/Product.astro";
+import elvive from "../images/elvive-hydra-hyaluronic-shampoo-400ml.webp"
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body class="min-h-screen flex flex-col">
+		<header class="px-2 py-3 lg:p-5 flex items-center justify-between sticky top-0 bg-white border-b border-slate-200">
+			<div class="flex items-center gap-3">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+				</svg>
+				<p class="text-2xl">Vale.</p>
+			</div>
+			<div class="mr-5">
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+					<path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+				</svg>				  
+			</div>
+		</header>
+		<main class="flex-1 font-helveticaLight">
+			<div class="p-5 flex justify-center items-center">
+				<div class="flex flex-col gap-4 lg:gap-7 text-center">
+					<h1 class="text-2xl lg:text-4xl font-semibold font-helveticaMedium">Hàng xách tay châu Âu</h1>
+					<h2 class="text-lg lg:text-2xl max-w-[20ch] lg:max-w-none mx-auto text-red-500">Sản phẩm chất lượng cao với giá tốt nhất</h2>
+				</div>
+			</div>
+			<div class="m-2 p-4 text-center bg-orange-200 rounded-[12px]">
+				<p class="text-red-500 text-xl mb-2">Giảm giá 50%</p>
+				<p>Sản phẩm nhập khẩu có chứng nhận từ châu Âu, có giảm giá cho các cửa hàng.</p>
+			</div>
+			<div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 py-5 lg:py-10">
+				<Product photo={elvive} title="L'oreal Elvive Hydra Hyaluronic" shortDescription="Dầu gội 72h dưỡng ẩm hydra hyaluronic Elvive L'Oreal Paris 370 ml."/>
+				<Product photo={elvive} title="L'oreal Elvive Hydra Hyaluronic" shortDescription="Dầu gội 72h dưỡng ẩm hydra hyaluronic Elvive L'Oreal Paris 370 ml."/>
+				<Product photo={elvive} title="L'oreal Elvive Hydra Hyaluronic" shortDescription="Dầu gội 72h dưỡng ẩm hydra hyaluronic Elvive L'Oreal Paris 370 ml."/>
+				<Product photo={elvive} title="L'oreal Elvive Hydra Hyaluronic" shortDescription="Dầu gội 72h dưỡng ẩm hydra hyaluronic Elvive L'Oreal Paris 370 ml."/>
+				<Product photo={elvive} title="L'oreal Elvive Hydra Hyaluronic" shortDescription="Dầu gội 72h dưỡng ẩm hydra hyaluronic Elvive L'Oreal Paris 370 ml."/>
+				<Product photo={elvive} title="L'oreal Elvive Hydra Hyaluronic" shortDescription="Dầu gội 72h dưỡng ẩm hydra hyaluronic Elvive L'Oreal Paris 370 ml."/>
+				<Product photo={elvive} title="L'oreal Elvive Hydra Hyaluronic" shortDescription="Dầu gội 72h dưỡng ẩm hydra hyaluronic Elvive L'Oreal Paris 370 ml."/>
+				<Product photo={elvive} title="L'oreal Elvive Hydra Hyaluronic" shortDescription="Dầu gội 72h dưỡng ẩm hydra hyaluronic Elvive L'Oreal Paris 370 ml."/>
+			</div>
+		</main>
+		<footer class="px-2 py-10 flex justify-center items-center">
+			© VALE 2024 Mọi quyền được bảo lưu
+		</footer>
+	</body>
+</html>
+
+
+<style is:global>
+	@font-face {
+		font-family: 'HelveticaNeueHeavy';
+		src: url('/fonts/HelveticaNeueHeavy.otf') format('opentype');
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'HelveticaNeueLight';
+		src: url('/fonts/HelveticaNeueLight.otf') format('opentype');
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'HelveticaNeueMedium';
+		src: url('/fonts/HelveticaNeueMedium.otf') format('opentype');
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+</style>
